@@ -1,0 +1,135 @@
+{
+  "notifications": [
+    {
+      "notificationType": "locationupdate", //care
+      "subscriptionName": "Vare",           //care
+      "eventId": 41732517,                  //care
+      "locationMapHierarchy": "Otaniemi>Väre>1", //care
+      "locationCoordinate": { //care
+        "x": 235.44597,
+        "y": 252.55223,
+        "z": 0,
+        "unit": "FEET"
+      },
+      "geoCoordinate": {  //care
+        "latitude": 60.18529488738063,
+        "longitude": 24.824708893047003,
+        "unit": "DEGREES"
+      },
+      "confidenceFactor": 24, //care
+      "apMacAddress": "NOT APPLICABLE",
+      "associated": false,
+      "username": "NOT APPLICABLE",
+      "ipAddress": [
+        "NOT APPLICABLE"
+      ],
+      "ssid": "NOT APPLICABLE",
+      "band": "NOT APPLICABLE",
+      "floorId": "-9013405199015870101", //care
+      "floorRefId": "-9013405199015870101",
+      "entity": "WIRELESS_CLIENTS",  //care
+      "deviceId": "00:00:0d:6a:ac:5d", //care
+      "lastSeen": "2019-11-04T16:50:53.573+0200", //care
+      "rawLocation": { //care
+        "rawX": -999,
+        "rawY": -999,
+        "unit": "FEET"
+      },
+      "tagVendorData": null,
+      "bleTagInfo": null,
+      "locComputeType": "RSSI",
+      "manufacturer": "Unknown",
+      "maxDetectedRssi": {
+        "apMacAddress": "f4:db:e6:85:7c:40",
+        "band": "IEEE_802_11_B",
+        "slot": 0,
+        "rssi": -42,
+        "antennaIndex": 0,
+        "lastHeardInSeconds": 40
+      },
+      "hierarchyDetails": {
+        "campusParents": null,
+        "campus": {
+          "id": "-9013405199015870347",
+          "name": "Otaniemi"
+        },
+        "building": {
+          "id": "-9013405199015870103",
+          "name": "Väre"
+        },
+        "floor": {
+          "id": "-9013405199015870101",
+          "name": "1"
+        },
+        "zones": null
+      },
+      "rssiEntries": [
+        {
+          "apMacAddress": "f4:db:e6:85:7c:40",
+          "band": "IEEE_802_11_B",
+          "slot": 0,
+          "antennaIndex": 0,
+          "rssi": -42,
+          "lastHeardSecs": 40
+        },
+        {
+          "apMacAddress": "f4:db:e6:85:7c:40",
+          "band": "IEEE_802_11_B",
+          "slot": 0,
+          "antennaIndex": 1,
+          "rssi": -42,
+          "lastHeardSecs": 40
+        },
+        {
+          "apMacAddress": "f4:db:e6:87:d4:00",
+          "band": "IEEE_802_11_B",
+          "slot": 0,
+          "antennaIndex": 0,
+          "rssi": -58,
+          "lastHeardSecs": 32
+        },
+        {
+          "apMacAddress": "f4:db:e6:87:d4:00",
+          "band": "IEEE_802_11_B",
+          "slot": 0,
+          "antennaIndex": 1,
+          "rssi": -58,
+          "lastHeardSecs": 32
+        },
+        {
+          "apMacAddress": "00:fc:ba:81:c1:20",
+          "band": "IEEE_802_11_B",
+          "slot": 0,
+          "antennaIndex": 1,
+          "rssi": -71,
+          "lastHeardSecs": 41
+        },
+        {
+          "apMacAddress": "00:fc:ba:81:c1:20",
+          "band": "IEEE_802_11_B",
+          "slot": 0,
+          "antennaIndex": 0,
+          "rssi": -71,
+          "lastHeardSecs": 41
+        },
+        {
+          "apMacAddress": "00:27:e3:49:c3:a0",
+          "band": "IEEE_802_11_B",
+          "slot": 0,
+          "antennaIndex": 1,
+          "rssi": -74,
+          "lastHeardSecs": 32
+        },
+        {
+          "apMacAddress": "00:27:e3:49:c3:a0",
+          "band": "IEEE_802_11_B",
+          "slot": 0,
+          "antennaIndex": 0,
+          "rssi": -74,
+          "lastHeardSecs": 32
+        }
+      ],
+      "timestamp": 1572879053573 //care
+    }
+  ]
+}
