@@ -25,6 +25,9 @@ def parse(filename):
 
 	return pd.DataFrame(rows, columns=cols)
 
+def extract_macs(dataframe):
+    return list(dataframe.deviceId.unique())
+
 
 if __name__ == '__main__':
 	df = parse('../data/testing/notify.json.2019-11-04-16-54')
