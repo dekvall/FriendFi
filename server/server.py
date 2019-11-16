@@ -10,7 +10,11 @@ cols = ['timestamp', 'confidence',
 	'latitude', 'longitude', 'geo_unit',
 	'campus', 'building', 'floor'] 
 
+<<<<<<< Updated upstream
 @app.route("/")
+=======
+@app.route("/data_feed")
+>>>>>>> Stashed changes
 def home():
     with db.connect(sqlite_file) as con:
         cur = con.cursor()
@@ -19,6 +23,12 @@ def home():
         json_thing = []
         for row in rows:
             json_thing.append(dict(zip(cols, row)))
+<<<<<<< Updated upstream
+=======
+
+    return json.dumps(json_thing)
+    #return "<h1 style='color:blue'>Hello There!</h1>"
+>>>>>>> Stashed changes
 
     return json.dumps(json_thing)
     
