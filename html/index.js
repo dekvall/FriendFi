@@ -157,6 +157,6 @@ $.get("/data_feed", function(data){
     for (i = 0; i < liveData.length; i++) {
         heatmap.addData({ x: liveData[i].x, y: liveData[i].y, value: 1 });
     }
-    heatmapInstance.repaint()
+    heatmap.repaint()
 });
     
