@@ -1,9 +1,15 @@
-from flask import Flask, render_template
-from flask_socketio import SocketIO
+from flask import Flask
+#from flask_socketio import  SocketIO
+
 
 app = Flask(__name__)
-app.config['SECRET_KEY'] = 'secret!'
-socketio = SocketIO(app)
+#socketio = SocketIO(app)
 
-if __name__ == '__main__':
-    socketio.run(app)
+@app.route("/")
+def hello():
+    return "<h1 style='color:blue'>Hello There!</h1>"
+
+
+
+if __name__ == "__main__":
+    app.run(host='127.0.0.1')
