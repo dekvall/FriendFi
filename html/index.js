@@ -37,6 +37,8 @@ var jsondata =
 
 ]
 
+var liveData;
+
 document.getElementById("heatmapContainerWrapper").setAttribute("align", "center");
 
 
@@ -147,6 +149,6 @@ for (i = 0; i < jsondata.length; i++) {
 //};
     
 $.get("/data_feed", function(data){
-    console.log("hej");
+    //console.log("hej");
     console.log(data)});
-    
+    liveData = data
