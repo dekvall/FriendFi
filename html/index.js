@@ -150,5 +150,6 @@ for (i = 0; i < jsondata.length; i++) {
     
 $.get("/data_feed", function(data){
     //console.log("hej");
-    console.log(data)});
+    console.log(data.length)});
+    console.log(data[0].x)});
     liveData = data
