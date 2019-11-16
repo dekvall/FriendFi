@@ -149,3 +149,4 @@ for (i = 0; i < jsondata.length; i++) {
 $.get("/data_feed", function(data){
     console.log("hej");
     console.log(data)});
+    
