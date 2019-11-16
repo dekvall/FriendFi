@@ -151,5 +151,12 @@ for (i = 0; i < jsondata.length; i++) {
 $.get("/data_feed", function(data){
     //console.log("hej");
     console.log(data.length)
-    liveData = data});
+    liveData = JSON.parse(data)
+
+    var i = 0;
+    for (i = 0; i < liveData.length; i++) {
+        heatmap.addData({ x: liveData[i].x, y: liveData[i].y, value: 1 });
+    }
+    heatmapInstance.repaint()
+});
     
