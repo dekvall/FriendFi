@@ -1,15 +1,26 @@
 from flask import Flask
-#from flask_socketio import  SocketIO
-
+import pandas as pd
+import sqlite3 as db
+import json
 
 app = Flask(__name__)
-#socketio = SocketIO(app)
+sqlite_file = 'feed_today.sqlite'
+cols = ['timestamp', 'confidence',
+	'x', 'y', 'z', 'loc_unit',
+	'latitude', 'longitude', 'geo_unit',
+	'campus', 'building', 'floor'] 
 
 @app.route("/")
-def hello():
-    return "<h1 style='color:blue'>Hello There!</h1>"
+def home():
+    with db.connect(sqlite_file) as con:
+        cur = con.cursor()
+        cur.execute("select * from records order by timestamp desc limit 100")
+        rows = cur.fetchall()
+        json_thing = []
+        for row in rows:
+            json_thing.append(dict(zip(cols, row)))
 
-
-
+    return json.dumps(json_thing)
+    
 if __name__ == "__main__":
-    app.run(host='127.0.0.1')
+    app.run(debug=True)
