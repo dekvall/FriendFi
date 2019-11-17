@@ -3,5 +3,6 @@ coordinate_test/*
 data.json
 .ipynb_checkpoints/
 scripts/__pycache__/
+README.html
 __pycache__/
 server/__pycache__/
