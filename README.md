@@ -12,4 +12,4 @@ RSSID is fetched from a provided api, along with the triangulated position. The 
 ## Demo
 ![demo](resources/demo.png)
 
-It's snowing in Finland!
+This project was made at the [Junction 2019](https://2019.hackjunction.com/) Hackathon, Helsinki, Finland.
