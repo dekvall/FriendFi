@@ -2,7 +2,7 @@ data/
 coordinate_test/*
 data.json
 .ipynb_checkpoints/
-data/
 scripts/__pycache__/
-*.sqlite
 README.html
+__pycache__/
+server/__pycache__/

@@ -39,6 +39,7 @@ var jsondata =
 
 document.getElementById("heatmapContainerWrapper").setAttribute("align", "center");
 
+
 var width = 1000
 var height = 700
 var border = 3
@@ -144,4 +145,8 @@ for (i = 0; i < jsondata.length; i++) {
 //    var y = e.layerY;
 //    heatmap.addData({ x: x, y: y, value: 1 });
 //};
+    
+$.get("/data_feed", function(data){
+    console.log("hej");
+    console.log(data)});
     
