@@ -1,0 +1,17 @@
+body {background-color: #E5E5E5;}
+
+
+#compassWrapper {
+  text-align: right;
+} 
+
+
+
+body, html { margin-left:13%; padding:0; height:100%;}
+body { font-family:sans-serif; }
+body * { font-weight:200;}
+#heatmapContainerWrapper { width:100%; height:100%; position: relative; left:0px; top:0px; }
+#heatmapContainer { width:100%; height:100%;}
+#compassWrapper{position:absolute; width:1000px; height:100px; max-width:1000px; max-height:100px; display: inline-block;}
+h1 { position:absolute; background:black; color:white; padding:10px; font-weight:200; z-index:10000;}
+#all-examples-info { position:absolute; background:white; font-size:16px; padding:20px; top:100px; width:350px; line-height:150%; border:1px solid rgba(0,0,0,.2);} */
